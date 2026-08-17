@@ -3,7 +3,11 @@ const utils = (() => {
     return input[0].toUpperCase() + input.slice(1).toLowerCase();
   };
 
-  return { capitalize };
+  const reverseString = (input: string) => {
+    return input.split("").reverse().join("");
+  };
+
+  return { capitalize, reverseString };
 })();
 
 export default utils;
