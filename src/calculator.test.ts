@@ -17,8 +17,8 @@ describe("calculator", () => {
   });
 
   describe("subtraction", () => {
-    test("subtraction 14 + 28 to be 42", () => {
-      expect(utils.calculator.subtract(14, 28)).toBe(42);
+    test("subtraction 14 - 28 to be 42", () => {
+      expect(utils.calculator.subtract(14, 28)).toBe(-14);
     });
 
     test("subtraction -0.1 - 0.2 to be -0.3", () => {
