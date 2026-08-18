@@ -29,4 +29,18 @@ describe("calculator", () => {
       expect(utils.calculator.subtract(-0.19, 82.9)).toBe(-83.09);
     });
   });
+
+  describe("division", () => {
+    test("division 64 / 8 to be 8", () => {
+      expect(utils.calculator.division(64, 8)).toBe(8);
+    });
+
+    test("division 0.9 / 3 to be 0.3", () => {
+      expect(utils.calculator.division(0.9, 3)).toBe(0.3);
+    });
+
+    test("division 32.2 / 123.7 to be", () => {
+      expect(utils.calculator.division(32.2, 123.7)).toBe(0.26030719482);
+    });
+  });
 });
