@@ -15,4 +15,18 @@ describe("calculator", () => {
       expect(utils.calculator.add(-0.69, 84.21)).toBe(83.52);
     });
   });
+
+  describe("subtraction", () => {
+    test("subtraction 14 + 28 to be 42", () => {
+      expect(utils.calculator.subtract(14, 28)).toBe(42);
+    });
+
+    test("subtraction -0.1 - 0.2 to be -0.3", () => {
+      expect(utils.calculator.subtract(-0.1, 0.2)).toBe(-0.3);
+    });
+
+    test("subtraction -0.19 - 82.9 to be -83.09", () => {
+      expect(utils.calculator.subtract(-0.19, 82.9)).toBe(-83.09);
+    });
+  });
 });
