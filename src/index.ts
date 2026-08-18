@@ -14,6 +14,9 @@ const utils = (() => {
     subtract: function (firstNumber: number, secondNumber: number) {
       return parseFloat((firstNumber - secondNumber).toFixed(12));
     },
+    division: function (firstNumber: number, secondNumber: number) {
+      return parseFloat((firstNumber / secondNumber).toFixed(10));
+    },
   };
 
   return { capitalize, reverseString, calculator };

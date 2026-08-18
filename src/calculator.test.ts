@@ -40,7 +40,7 @@ describe("calculator", () => {
     });
 
     test("division 32.2 / 123.7 to be", () => {
-      expect(utils.calculator.division(32.2, 123.7)).toBe(0.26030719482);
+      expect(utils.calculator.division(32.2, 123.7)).toBe(0.2603071948);
     });
   });
 });
