@@ -39,8 +39,22 @@ describe("calculator", () => {
       expect(utils.calculator.division(0.9, 3)).toBe(0.3);
     });
 
-    test("division 32.2 / 123.7 to be", () => {
+    test("division 32.2 / 123.7 to be 0.2603071948", () => {
       expect(utils.calculator.division(32.2, 123.7)).toBe(0.2603071948);
+    });
+  });
+
+  describe("multiplication", () => {
+    test("multiplication 4 * 12 to be 48", () => {
+      expect(utils.calculator.multiply(4, 12)).toBe(48);
+    });
+
+    test("multiplication 0.15 * 2 to be 3", () => {
+      expect(utils.calculator.multiply(0.15, 2)).toBe(3);
+    });
+
+    test("multiplication 53.5 * 43.7 to be 2337.95", () => {
+      expect(utils.calculator.multiply(53.5, 43.7)).toBe(2337.95);
     });
   });
 });
