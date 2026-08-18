@@ -7,7 +7,13 @@ const utils = (() => {
     return input.split("").reverse().join("");
   };
 
-  return { capitalize, reverseString };
+  const calculator = {
+    add: function (firstNumber: number, secondNumber: number) {
+      return parseFloat((firstNumber + secondNumber).toFixed(12));
+    },
+  };
+
+  return { capitalize, reverseString, calculator };
 })();
 
 export default utils;
