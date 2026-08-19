@@ -50,7 +50,7 @@ describe("calculator", () => {
     });
 
     test("multiplication 0.15 * 2 to be 3", () => {
-      expect(utils.calculator.multiply(0.15, 2)).toBe(3);
+      expect(utils.calculator.multiply(0.15, 2)).toBe(0.3);
     });
 
     test("multiplication 53.5 * 43.7 to be 2337.95", () => {
