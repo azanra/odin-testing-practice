@@ -1,6 +1,6 @@
 const utils = (() => {
   const capitalize = (input: string) => {
-    return input[0].toUpperCase() + input.slice(1).toLowerCase();
+    return input?.[0]?.toUpperCase() + input.slice(1).toLowerCase();
   };
 
   const reverseString = (input: string) => {
