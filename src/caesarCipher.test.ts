@@ -11,6 +11,6 @@ describe("caesarCipher", () => {
   });
 
   test("Hello, World! with shift 3 return Khoor, Zruog!", () => {
-    expect(utils.caesarCipher("Hello, World!")).toBe("Khoor, Zruog!");
+    expect(utils.caesarCipher("Hello, World!", 3)).toBe("Khoor, Zruog!");
   });
 });
